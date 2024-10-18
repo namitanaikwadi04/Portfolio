@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Check if there is an existing impression count in local storage
+            let impressionCount = localStorage.getItem("impressionCount");
+
+            // If no count exists, set it to 0
+            if (impressionCount === null) {
+                impressionCount = 0;
+            }
+
+            // Increment the impression count
+            impressionCount++;
+
+            // Update the count in local storage
+            localStorage.setItem("impressionCount", impressionCount);
+
+            // Display the count on the page
+            document.getElementById("impressionCount").innerText = impressionCount;
+        });
+    </script>
+
+	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZD25CQ9194"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-ZD25CQ9194');
+</script>
+<style>
+    .dark-icon {
+        color: #000000; /* This will make the icon darker */
+        text-shadow: 1px 1px 2px #555; /* This will give the icon a 3D effect */
+    }
+</style>
+	<title>Namita Naikwadi Portfolio</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+	<link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+	<link rel="stylesheet" href="css/animate.css">
+
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="css/magnific-popup.css">
+
+	<link rel="stylesheet" href="css/aos.css">
+
+	<link rel="stylesheet" href="css/ionicons.min.css">
+
+	<link rel="stylesheet" href="css/flaticon.css">
+	<link rel="stylesheet" href="css/icomoon.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script defer src="/_vercel/insights/script.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+
+</head>
+
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+
+	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+		<div class="container">
+			<a class="navbar-brand" href="index.html">Namita</a>
+			<button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse"
+				data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="oi oi-menu"></span> Menu
+			</button>
+
+			<div class="collapse navbar-collapse" id="ftco-nav">
+				<ul class="navbar-nav nav ml-auto">
+					<li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+					<li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+					<li class="nav-item"><a href="#resume-section" class="nav-link"><span>Education & Experience</span></a></li>
+					<li class="nav-item"><a href="#projects-section" class="nav-link"><span>Projects</span></a></li>
+					<li class="nav-item"><a href="#skills-section" class="nav-link"><span>Skills</span></a></li>
+					<li class="nav-item"><a href="#services-section" class="nav-link"><span>Certifications</span></a></li>
+					<li class="ftco-animate" style="font-size: 24px; margin-right: 30px;"><a href="https://github.com/namitanaikwadi" target="_blank"><span class="icon-github"></span></a></li>
+					<li class="ftco-animate" style="font-size: 24px; margin-right: 20px;"><a href="https://www.linkedin.com/in/namita-naikwadi/" target="_blank"><span class="icon-linkedin"></span></a></li>
+					<li class="ftco-animate"style="font-size: 24px;"><a href="mailto:namitanaikwadi04@gmail.com"><span class="icon-mail_outline"></span></a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<section id="home-section" class="hero">
+		<div class="home-slider  owl-carousel">
+			<div class="slider-item ">
+				<div class="overlay"></div>
+				<div class="container">
+					<div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end"
+						data-scrollax-parent="false">
+						<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/Bitmoji.png);background-size: 720px 450px;background-position-y: 30%;">
+							<div class="overlay"></div>
+						</div>
+						<div class="one-forth d-flex  align-items-center ftco-animate"
+							data-scrollax=" properties: { translateY: '70%' }">
+							<div class="text">
+								<span class="subheading">Hello!</span>
+								<h1 class="mb-4 mt-3">I'm <span>Namita Naikwadi</span></h1>
+								<h2>I'm a
+									<span class="txt-rotate" data-period="100"
+										data-rotate='["Full Stack Developer.", "Software Developer."]'></span>
+								</h2>
+								<p><a href="https://www.linkedin.com/in/namita-naikwadi/" target="_blank" class="btn btn-primary py-3 px-4">My LinkedIn</a> <a href="#projects-section"
+										class="btn btn-white btn-outline-white py-3 px-4">My Projects</a></p>
+							</div>
+
+						</div>
+					</div>
+				</div>
+	</section>
+
+	<section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+		<div class="container">
+			<div class="row d-flex">
+				<div class="col-md-6 col-lg-5 d-flex">
+					<div class="img-about img d-flex align-items-stretch">
+						<div class="overlay"></div>
+						<div class="img d-flex align-self-stretch align-items-center"
+							style="background-image:url(images/MyPicture.jpeg);">
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+					<div class="row justify-content-start pb-3">
+						<div class="col-md-12 heading-section ftco-animate">
+							<h1 class="big">About</h1>
+							<h2 class="mb-4">About Me</h2>
+							<p> Hello, I'm Namita Naikwadi, a dedicated Software Developer with a passion for crafting robust and scalable applications. 
+								My journey has equipped me with a deep understanding of both front-end and back-end development, ensuring a holistic 
+								approach to every project. Driven by a commitment to excellence and continuous learning, I am always seeking new challenges 
+								that push the boundaries of technology and deliver meaningful user experiences. </p>
+							<ul class="about-info mt-4 px-md-0 px-2">
+								<li class="d-flex"><span>Name:</span> <span>Namita Naikwadi</span></li>
+								<li class="d-flex"><span>Address:</span> <span>New York, USA</span></li>
+								<li class="d-flex"><span>Email:</span> <span>namitanaikwadi04@gmail.com</span></li>
+								<li class="d-flex"><span>Phone: </span> <span>+1(680)-216-3656</span></li>
+							</ul>
+						</div>
+					</div>
+					<div class="counter-wrap ftco-animate d-flex mt-md-3">
+						<div class="text">
+							<p><a href="https://drive.google.com/file/d/1PXQ5MpjPPtqKiIg29VpB09x4nFsUqWPS/view?usp=sharing" download="Namita Naikwadi Resume"
+									target="_blank" class="btn btn-primary py-3 px-3">Download CV</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="ftco-section ftco-no-pb" id="resume-section">
+		<div class="container">
+			<div class="row justify-content-center pb-5">
+				<div class="col-md-10 heading-section text-center ftco-animate">
+					<h1 class="big big-2">Education & Experience</h1>
+					<h2 class="mb-4">Education & Experience</h2>
+					
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 animated fadeInUp">
+					<h2 class="fw-normal section-heading font-grey"></h2>
+					<ul class="timeline mt-4 pr-md-5">
+						<li class="education">
+							<div class="title">AUG 2023 - Present</div>
+							<div class="details">
+								<h5>Master of Science in Computer Science</h5>
+								<small class="organization">Syracuse University, New York</small>
+								<p><b>FPP Associate: Women in Science & Engineering (WiSE)</b> <br><b>Coursework:</b> Android Programming, Machine Learning, Advanced Operating System, Social Media and Data Mining, Design and Analysis of Algorithms, Computer Architecture, Assured Programming and Formal Methods, Internet of Things, Object Oriented Design.</p>
+							</div>
+						</li>
+						<li class="experience">
+							<div class="title">July 2024 - Present</div>
+							<div class="details">
+								<h5>Software Developer</h5>
+								<small class="organization">iConsult, Syracuse University</small>
+								<p><b>Responsibilities</b></p>
+								<p>● Enhancing client website performance and user experience operating HTML, CSS, Javascript; analyzing user feedback, client feedback and resolving bugs, revamping functioning by 40%</p>
+								<p>● Engaging in technical decision-making processes, ensuring user satisfaction and real-time data updates</p>
+								
+							</div>
+							<div class="title">Aug 2021 - Aug 2023</div>
+							<div class="details">
+								<h5>Software Development Engineer</h5>
+								<small class="organization">Infosys</small>
+								<p><b>Responsibilities</b></p>
+								<p>●Supervised team for a US based Insurance client to develop enterprise-level web applications using ASP.NET, C#, ASP.NET WebAPI (REST), and third-party REST API integration particularly DocuSign</p>
+								<p>●Facilitated development of robust CI/CD pipelines leveraging Jenkins to automate build, test, deployment processes</p>
+								<p>●Executed security and operational issues maintaining OWASP standards on web application, focusing on Injection, Broken Authentication, Sensitive Data Exposure, and Broken Access Control by 30%</p>
+								<p>●Authored server-side validations and made data-driven decisions using SumoLogic tool, resulting in a 15% improvement in overall cyber threat detection and response</p>
+								<p>●Conducted in-depth analysis, identifying and rectifying web app vulnerabilities through source code review, leading to a 40% reduction in security vulnerabilities</p>
+							</div>
+						</li>
+		
+						<li class="education">
+							<div class="title">July 2017 - May 2021</div>
+							<div class="details">
+								<h5>Bachelor’s in Computer Engineering</h5>
+								<small class="organization">Savitribai Phule Pune University</small>
+								<p><b>Coursework:</b> Data Structure and Algorithms, Object Oriented Programming, Data Science, Big Data Analytics, Cybersecurity, Mobile Communication, Artificial Intelligence and Robotics, Software Engineering, Cloud Computing, Mathematics, Web Technology, Database Management System, Discrete Mathematics, Statistics.</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+
+
+			</div>
+			<div class="row justify-content-center mt-5">
+				<div class="col-md-6 text-center ftco-animate">
+					<p><a href="https://drive.google.com/file/d/1PXQ5MpjPPtqKiIg29VpB09x4nFsUqWPS/view?usp=sharing" download=" Namita Naikwadi resume" target="_blank"
+							class="btn btn-primary py-4 px-5">Download CV</a></p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="ftco-section ftco-project" id="projects-section">
+		<div class="container">
+			<div class="row justify-content-center pb-5">
+				<div class="col-md-12 heading-section text-center ftco-animate">
+					<h1 class="big big-2">Projects</h1>
+					<h2 class="mb-4"> Projects</h2>					
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+					<a href="" target="_blank">
+						<div class="project img ftco-animate d-flex justify-content-center align-items-center"
+							style="background-image: url(images/aboutMe.jpg);">
+							<div class="overlay"></div>
+							<div class="text text-center p-4">
+								<h3>AboutMe</h3>
+								<span>Android Application</span>
+							<div class="links">
+								<a href="https://github.com/namitanaikwadi04/AboutMe" target="_blank" class="github-link">
+									<i class="fab fa-github fa-2x dark-icon"><h6>Github</h6></i>
+								</a>
+							</div>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-md-4">
+					<a href="https://github.com/namitanaikwadi04/Diabetech" target="_blank">
+						<div class="project img ftco-animate d-flex justify-content-center align-items-center"
+							style="background-image: url(./images/myQuiz.jpg);">
+							<div class="overlay"></div>
+							<div class="text text-center p-4">
+								<h3>myQuiz</h3>
+								<span>Android Application</span>
+								<div class="links">
+									<a href="https://github.com/namitanaikwadi04/Diabetech" target="_blank" class="github-link">
+										<i class="fab fa-github fa-2x dark-icon"><h6>Github</h6></i>
+									</a>
+								</div>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-md-4">
+					<a href="" target="_blank">
+						<div class="project img ftco-animate d-flex justify-content-center align-items-center"
+						style="background-image: url(images/diabeTech.jpg);">
+							<div class="overlay"></div>
+							<div class="text text-center p-4">
+								<h3>DiabeTech</h3>
+								<span>Website</span>
+							<div class="links">
+								<a href="https://github.com/namitanaikwadi04/Diabetech" target="_blank" class="github-link">
+									<i class="fab fa-github fa-2x dark-icon"><h6>Github</h6></i>
+								</a>
+							</div>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-md-4">
+					<a href="" target="_blank">
+						<div class="project img ftco-animate d-flex justify-content-center align-items-center"
+						style="background-image: url(images/VitaminDeficiency.jpg);">
+							<div class="overlay"></div>
+							<div class="text text-center p-4">
+								<h3>Vitamin Deficiency Detection using Image Processing and Artificial Intelligence</h3>
+								<span>Image Processing, Machine Learning</span>
+							<div class="links">
+								<a href="https://github.com/namitanaikwadi/Detection_of_Vitamin_deficiency_using_machine_learning" target="_blank" class="github-link">
+									<i class="fab fa-github fa-2x dark-icon"><h6>Github</h6></i>
+								</a>
+							</div>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-md-4">
+					<a href="" target="_blank">
+						<div class="project img ftco-animate d-flex justify-content-center align-items-center"
+							style="background-image: url(images/vehicleAccident.jpg);">
+							<div class="overlay"></div>
+							<div class="text text-center p-4">
+								<h3>Vehicle Accident Detection</h3>
+								<span>Excel, Pyhton-Machine Learning</span>
+							<div class="links">
+								<a href="https://github.com/namitanaikwadi04/Diabetech" target="_blank" class="github-link">
+									<i class="fab fa-github fa-2x dark-icon"><h6>Github</h6></i>
+								</a>
+							</div>
+							</div>
+						</div>
+					</a>
+				</div>		
+				<div class="col-md-4">
+					<div class="project img ftco-animate d-flex justify-content-center align-items-center"
+						style="background-image: url(images/ObjectDetection.jpg);">
+						<div class="overlay"></div>
+						<div class="text text-center p-4">
+							<h3>Object Detection using OpenCV</h3>
+							<span>OpenCV, Artificial Intelligence</span>
+							<div class="links">
+								<a href="https://github.com/namitanaikwadi/Object_Detection/blob/main/object_detection_python.ipynb" target="_blank" class="github-link">
+									<!-- <img src="images/github-logo.png" alt="GitHub" style="width:px;height:1000px;"> -->
+									<i class="fab fa-github fa-2x dark-icon"><h6>Github</h6></i>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>				
+			</div>
+		</div>
+	</section>
+
+	<section class="ftco-section" id="skills-section">
+		<div class="skills-section sections" id='skills'>
+			<div class="container py-3">
+				<div class="row justify-content-center py-5 mt-5">
+					<div class="col-md-12 heading-section text-center ftco-animate">
+						<h1 class="big big-2">Skills and Tools</h1>
+						<h2 class="mb-4">Skills and Tools</h2>
+					</div>
+				</div>
+				<div class="row py-3">
+					<div class="col-lg-12">
+						<div class='px-lg-3 skill-tab'>
+							<div class="row">
+								<div class="col-3">
+									<img src="images/python.png">
+									<p>Python</p>
+								</div>
+								<div class="col-3">
+									<img src="images/my_skills/R.png">
+									<p>R</p>
+								</div>
+								<div class="col-3">
+									<img src="images/SQL.png">
+									<p>MySQL</p>
+								</div>
+								<div class="col-3">
+									<img src="images/my_skills/aws.png"/>
+									<p>AWS</p>
+								</div>
+								<div class="col-3">
+									<img src="images/my_skills/git.png" />
+									<p>Git</p>
+								</div>
+								<div class="col-3">
+									<img src="images/my_skills/jira.png" />
+									<p>Jira</p>
+								</div>
+								<div class="col-3">
+									<img src="images/my_skills/postgresql.png" />
+									<p>PostgreSQL</p>
+								</div>
+								<div class="col-3">
+									<img src="images/icons8-oracle-logo-48.png" />
+									<p>Oracle</p>
+								</div>
+								<div class="col-3">
+									<img src="images/my_skills/pandas-PhotoRoom.png" />
+									<p>Pandas</p>
+								</div>
+								<div class="col-3">
+									<img src="images/my_skills/Numpy.png" />
+									<p>NumPy</p>
+								</div>
+								<div class="col-3">
+									<img src="images/my_skills/matplot.svg" />
+									<p>matplotlib</p>
+								</div>
+								<div class="col-3">
+									<img src="images/icons8-tableau-software-48.png" />
+									<p>Tableau</p>
+								</div>
+								<div class="col-3">
+									<img src="images/icons8-power-bi-48.png" />
+									<p>Power BI</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="ftco-section" id="services-section">
+		<div class="container">
+			<div class="row justify-content-center py-5 mt-5">
+				<div class="col-md-12 heading-section text-center ftco-animate">
+					<h1 class="big big-2">Certifications</h1>
+					<h2 class="mb-4">Certifications</h2>
+					
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4 text-center d-flex ftco-animate">
+					<a href="#" class="services-1">
+						
+						<div class="desc">
+							<h3 class="mb-5">Cloud Engineering Track GCP - Google Developer Student Club</h3>
+						</div>
+					</a>
+				</div>
+				<div class="col-md-4 text-center d-flex ftco-animate">
+					<a href="#" class="services-1">
+						
+						<div class="desc">
+							<h3 class="mb-5">Microsoft Technology Associate: Programming using Python</h3>
+						</div>
+					</a>
+				</div>
+				<div class="col-md-4 text-center d-flex ftco-animate">
+					<a href="#" class="services-1">
+						
+						<div class="desc">
+							<h3 class="mb-5">Microsoft SQL Server Developer</h3>
+						</div>
+					</a>
+				</div>
+
+				<div class="col-md-4 text-center d-flex ftco-animate">
+					<a href="#" class="services-1">
+						
+						<div class="desc">
+							<h3 class="mb-5">JPMorgan Software Engineering Job Simulation on Forage</h3>
+						</div>
+					</a>
+				</div>
+				<div class="col-md-4 text-center d-flex ftco-animate">
+					<a href="#" class="services-1">
+						
+						<div class="desc">
+							<h3 class="mb-5">SQL Developer</h3>
+						</div>
+					</a>
+				</div>
+				<div class="col-md-4 text-center d-flex ftco-animate">
+					<a href="#" class="services-1">
+						
+						<div class="desc">
+							<h3 class="mb-5">AWS Cloud Practitioner Certified</h3>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<!-- <footer class="ftco-footer ftco-section">
+		<div class="container">
+			<div class="row mb-5">
+				<div class="col-md">
+					<div class="ftco-footer-widget mb-4">
+						
+						<ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
+							<li class="ftco-animate"><a href="mailto:balacha2@buffalo.edu"><span class="icon-mail_outline"></span></a></li>
+							<li class="ftco-animate"><a href="https://www.linkedin.com/in/aravind-balachandar/" target="_blank"><span class="icon-linkedin"></span></a></li>
+							<li class="ftco-animate"><a href="https://github.com/aravind0402"><span class="icon-github"></span></a></li>
+						</ul>
+					</div>
+				</div>
+
+		</div>
+	</footer> -->
+
+	<!-- loader -->
+	<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
+			<circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+			<circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+				stroke="#F96D00" />
+		</svg></div>
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery-migrate-3.0.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.easing.1.3.js"></script>
+	<script src="js/jquery.waypoints.min.js"></script>
+	<script src="js/jquery.stellar.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/aos.js"></script>
+	<script src="js/jquery.animateNumber.min.js"></script>
+	<script src="js/scrollax.min.js"></script>
+	<script src="js/main.js"></script>
+
+</body>
+</html>
