@@ -11,7 +11,6 @@ Visit the portfolio here: [(https://namitanaikwadi04.github.io/Portfolio/)]
 - **HTML5 / CSS3 / JavaScript**
 - **Bootstrap 4**
 - **jQuery**
-- **Magnific Popup**
 - **Font Libraries:** Icomoon, Ionicons, Flaticon
 
 ## 📁 Project Structure
